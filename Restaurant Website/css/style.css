@@ -1,0 +1,891 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&family=Space+Grotesk:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------------*/
+
+* {
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  font-family: montserrat;
+}
+nav {
+  position: fixed;
+
+  background: #ff5403;
+  height: 70px;
+  width: 100%;
+}
+.logo {
+  margin-left: -70px;
+  font-family: "Space Grotesk", sans-serif;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin-bottom: 15px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: #ff5403;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  .logo {
+    margin-left: -19px;
+  }
+
+  header {
+    margin-left: 0px;
+  }
+
+  ul {
+    position: absolute;
+    width: 110%;
+    height: 70vh;
+    background: #ff5403;
+    top: 73px;
+    margin-top: -5px;
+    left: -110%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #000000;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+#icon {
+  color: #fff;
+  font-size: 75px;
+  padding: 30px;
+}
+
+.nav-icons {
+  margin-top: 20px;
+  margin-bottom: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+}
+
+/*-----------------welcome page-----------------------*/
+.home {
+  width: 100%;
+  height: 630px;
+
+  /* transform: rotate(90deg); */
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome-heading {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.welcome-para {
+  font-size: 18px;
+}
+
+span {
+  color: #ff5403;
+}
+p {
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: #ff5403;
+
+  border-color: #ff5403;
+  color: #fff;
+  width: 150px;
+  font-size: 20px;
+  height: 50px;
+}
+
+.btn-warning:hover {
+  background-image: linear-gradient(
+    96.5deg,
+    rgba(39, 103, 187, 1) 10.4%,
+    rgba(16, 72, 144, 1) 87.7%
+  );
+  border: none;
+  color: white;
+}
+
+.home-container {
+  padding-top: 220px;
+
+  text-align: center;
+}
+
+/*-----------------About us-------------------------*/
+
+.about {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  text-align: center;
+  color: #ff5403;
+
+  font-weight: 620;
+}
+
+h3 {
+  padding-bottom: 26px;
+  color: #ff5403;
+}
+
+.about-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+
+.about-para {
+  color: black;
+}
+
+.btn-light {
+  border-color: #ff5403;
+  background: #ff5403;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn-light:hover {
+  border-color: #ff5403;
+
+  background: #fff;
+  color: #ff5403;
+}
+
+.col-left {
+  margin-top: 67px;
+  margin-left: 30px;
+}
+
+.dishes {
+  margin-top: 30px;
+}
+
+#dish {
+  height: 830px;
+}
+
+.food {
+  margin: 10px;
+  width: 360px;
+  height: 210px;
+}
+
+.food1,
+.food2,
+.food3,
+.food4,
+.food5,
+.food6 {
+  box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5);
+  margin: 5px;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.all-foods {
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dish-item {
+  justify-content: center;
+  display: flex;
+}
+
+.dish-item a {
+  color: #ff5403;
+
+  width: px;
+  font-size: 20px;
+  margin: 10px;
+  font-weight: 600;
+  background: none;
+}
+
+.dish-item a {
+  margin: 10px;
+}
+
+.dish-item a:hover {
+  color: black;
+
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+.dishes {
+  height: 700px;
+}
+
+/*-----------------Dishes------------------------*/
+
+/*-----------------Chefs-------------------------*/
+
+.chef {
+  box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5);
+  padding: 3px;
+  width: 250px;
+  height: 322px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 38px;
+  border-radius: 5px;
+}
+
+#chef {
+  height: 250px;
+  height: 250px;
+}
+
+.chef-title {
+  color: black;
+}
+
+.chef-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+.h4 {
+  text-align: center;
+  margin-left: 9px;
+}
+
+/*---------------------------*/
+.special-item {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+
+.item {
+  width: 600px;
+  display: flex;
+  height: 270px;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+
+#item {
+  /* height: ; */
+  width: 320px;
+}
+
+#item {
+  color: black;
+}
+
+#about-item {
+  padding: 10px;
+  color: black;
+}
+h6 {
+  margin-left: 40px;
+  font-size: 27px;
+}
+
+.i {
+  color: #ff5403;
+  margin-right: -20px;
+}
+
+.icons {
+  margin-top: 50px;
+  display: flex;
+
+  font-size: 50px;
+  justify-content: center;
+  margin-left: 80px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  padding: 70px;
+}
+
+h4 {
+  margin-top: 7px;
+  margin-left: -40px;
+}
+
+#i {
+  text-align: center;
+  color: black;
+  margin-left: -50px;
+
+  font-size: 13px;
+}
+
+/*------------------------------------------------------------------------*/
+.order-input {
+}
+
+.order-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 180px;
+}
+
+input {
+  margin-top: 10px;
+  width: 450px;
+  height: 46px;
+}
+
+.address {
+  height: 140px;
+}
+
+/*....................*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+}
+
+.container1 {
+  margin-left: 150px;
+  width: 77%;
+  margin-top: 40px;
+  border-radius: 5px;
+  box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+}
+
+p {
+  margin-top: 9px;
+}
+input {
+  margin-top: 16px;
+  /* width: ; */
+  font-size: 20px;
+  height: 47px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.p2 {
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+.btn {
+  height: 50px;
+}
+
+.btn-primary {
+  margin-top: 16px;
+  border-color: #ff5403;
+  width: 50%;
+  margin-left: 250px;
+
+  background: #ff5403;
+}
+.btn-primary:hover {
+  border-color: #ff5403;
+  background: #fff;
+  color: #ff5403;
+}
+
+.container4 {
+  display: flex;
+}
+.container1 {
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+.order {
+  margin-bottom: 50px;
+}
+
+/*...............................................................................*/
+
+.contact {
+  height: 410px;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(247, 87, 0, 1) 0%,
+    rgba(249, 0, 0, 1) 90.1%
+  );
+}
+
+.nav-call {
+  margin-bottom: 0;
+}
+
+#food {
+  font-size: 30px;
+}
+#phone {
+  font-size: 30px;
+}
+
+.contact-icons {
+  justify-content: center;
+  font-size: 50px;
+}
+.li {
+  color: white;
+}
+
+.container {
+  /* padding: ; */
+  height: 40px;
+  margin-top: 20px;
+}
+
+.subscribe {
+  margin-left: 430px;
+}
+.input1 {
+  border: none;
+
+  border-radius: 5px;
+  height: 38px;
+  width: 35%;
+  font-size: 18px;
+}
+
+.btn-dark {
+  margin-bottom: 7px;
+  height: 40px;
+}
+
+.h3 {
+  color: white;
+}
+
+.A1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.h3 {
+  color: #fff;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.a {
+  padding: 12px;
+  text-align: center;
+}
+.b {
+  padding: 12px;
+  text-align: center;
+  margin-left: 80px;
+  text-align: center;
+}
+
+.C {
+  text-align: center;
+  padding: 12px;
+  margin-left: 80px;
+}
+
+#c {
+  font-size: 16px;
+}
+
+a {
+  color: white;
+}
+
+.contact-container ol {
+  display: flex;
+  justify-content: center;
+}
+
+ol {
+  display: flex;
+}
+
+ol a {
+  color: #ff5403;
+  font-size: 30px;
+
+  padding: 20px;
+}
+
+ol a:hover {
+  background: none;
+  color: black;
+}
+
+/*------------------------------------------*/
+
+@media (max-width: 670px) {
+  nav {
+    flex-direction: column;
+    position: relative;
+  }
+  nav ul {
+    margin-left: -24px;
+    flex-direction: column;
+  }
+  nav ul li {
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+
+  .nav-call {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #phone {
+    margin-left: -200px;
+  }
+  #food {
+    margin-left: -120px;
+  }
+  .fa-utensils {
+    margin-left: 100px;
+  }
+
+  .nav-items {
+    /* display:flex;
+
+  justify-content: center; */
+  }
+  .nav-icons {
+    flex-direction: row;
+  }
+
+  /* .home {
+  } */
+
+  #home {
+    font-size: 40px;
+  }
+  #a {
+    font-size: 24px;
+  }
+
+  .home-container {
+    height: 1000px;
+    margin-top: -70px;
+    padding-bottom: 200px;
+  }
+
+  .btn-warning {
+    margin-bottom: 50px;
+  }
+
+  .welcome-para {
+    font-size: 14px;
+  }
+
+  /*----------------about us-----------------------*/
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .lady-chef {
+    margin-left: 50px;
+  }
+
+  .chef-container {
+    margin-top: 50px;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+
+  .chef {
+    margin-left: 0px;
+  }
+
+  .special-resp {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+
+  .special-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    width: 340px;
+
+    height: auto;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  #dish {
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .all-foods {
+    margin-left: 36px;
+  }
+
+  .icons {
+    margin-left: px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: -70px;
+  }
+  .icon {
+    /* padding: 30px; */
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+  h4 {
+    margin-left: 0px;
+  }
+  .i {
+    margin-left: 37px;
+  }
+
+  #i {
+    margin-left: -190px;
+  }
+
+  .container1 {
+    margin-left: 0px;
+    width: 77%;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+  }
+
+  input {
+    width: 300px;
+  }
+  .A {
+    display: flex;
+    flex-direction: column;
+  }
+  .container4 {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-primary {
+    margin-top: 16px;
+    border-color: #ff5403;
+    width: 50%;
+    margin-left: 72px;
+
+    background: #ff5403;
+  }
+  .container1 {
+    margin-left: 57px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .A1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .a {
+  }
+  .b {
+    margin-left: -1px;
+  }
+  .C {
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .subscribe {
+    margin-left: 40px;
+  }
+  .input1 {
+    border-radius: 3px;
+    border: none;
+    width: 300px;
+    height: 38px;
+    font-size: 18px;
+  }
+
+  .btn-dark {
+    margin-bottom: 7px;
+    height: 40px;
+  }
+
+  #food {
+    font-size: 25px;
+    margin-left: 0px;
+  }
+  #phone {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .contact-container ol {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dish-items {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dish-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dish-item a {
+    margin: 10px;
+    padding: 10px;
+  }
+  #icon {
+    color: #ff5403;
+    font-size: 30px;
+  }
+  .p1 {
+    color: black;
+    margin-left: 50px;
+  }
+}
+
+#icon {
+  color: #ff5403;
+  font-size: 30px;
+}
+.p1 {
+  color: black;
+  text-align: center;
+}
